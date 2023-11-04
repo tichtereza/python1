@@ -38,6 +38,10 @@ for den in teploty:
 
 print(denni_prumer)
 
+# a/ zápis pomocí List Comprehension
+denni_prumerne_teploty = [round(statistics.mean(den),2) for den in teploty]
+print(denni_prumerne_teploty)
+
 # b/ Vytvoř seznam ranních teplot.
 ranni_teploty = []
 
