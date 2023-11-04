@@ -27,7 +27,7 @@ def overeni_cisla(tel_cislo):
     print(f"Počet znaků v telefonním čísle: {delka}.")
     povolena_delka1 = 9
     povolena_delka2 = 13
-    if delka == povolena_delka1 or povolena_delka2:
+    if delka == povolena_delka1 or delka == povolena_delka2:
         return True
     else:
         return False
@@ -41,6 +41,7 @@ if verifikace == True:
     zprava_uzivatele = input("Zadej text SMS zprávy: ")    
 else:
     print(f"Zadali jste nesprávné telefonní číslo.")
+    exit()
 # pokud by zadal string namísto integer - v předchozím kroku elif
 # else:
 #     print(f"Nerozumím, začnete prosím znovu.")
